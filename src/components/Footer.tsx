@@ -1,21 +1,7 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Flame } from 'lucide-react';
-import ScrollReveal from './ScrollReveal';
 import './Footer.css';
 
 export default function Footer() {
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      setEmail('');
-      setTimeout(() => setSubmitted(false), 3000);
-    }
-  };
 
   const footerLinks = [
     { title: 'Shop', links: ['New Arrivals', 'Best Sellers', 'Sets', 'Leggings', 'Sports Bras'] },
@@ -32,37 +18,6 @@ export default function Footer() {
 
   return (
     <footer id="footer" className="footer">
-      {/* CTA Banner */}
-      <ScrollReveal variant="slideUp">
-        <div className="footer__cta-banner glass">
-          <div className="footer__cta-content">
-            <motion.div
-              className="footer__scarcity-badge flex items-center gap-2 justify-center"
-              animate={{ scale: [1, 1.05, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <Flame className="w-4 h-4 text-orange-500" /> Limited drops every month
-            </motion.div>
-            <h2>Join the <span className="text-gold">VIP List</span></h2>
-            <p>Get 15% OFF your first order + early access to new drops.</p>
-
-            <form className="footer__newsletter" onSubmit={handleSubmit}>
-              <div className="footer__input-wrapper">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  required
-                />
-                <button type="submit" className="btn-primary footer__submit-btn">
-                  {submitted ? '✓ Joined!' : 'Get 15% Off'}
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </ScrollReveal>
 
       {/* Footer Grid */}
       <div className="footer__main container">
