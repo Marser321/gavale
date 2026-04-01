@@ -1,0 +1,193 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg img,
+.hero__bg video {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  /* Radial gradient: transparent center, dark edges for framing the lifestyle photo */
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(10, 10, 10, 0.1) 0%,
+    rgba(10, 10, 10, 0.4) 50%,
+    rgba(10, 10, 10, 0.8) 85%,
+    var(--gavale-black) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: var(--space-2xl) var(--space-xl);
+  margin-top: 4rem;
+  
+  /* Glass panel to retain legibility over the brightened photo */
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.5));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.hero__badge {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: var(--cta);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  padding: 0.4rem 1.2rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-xl);
+  background: rgba(212, 165, 116, 0.05);
+}
+
+.hero__headline {
+  margin-bottom: var(--space-lg);
+  overflow: hidden;
+}
+
+.hero__word {
+  display: inline-block;
+  will-change: transform, opacity;
+  margin-right: 0.3em;
+}
+
+.hero__sub {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto var(--space-2xl);
+  color: var(--gavale-silver);
+  line-height: 1.8;
+}
+
+.hero__cta-group {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-hero {
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+.btn-hero-secondary {
+  font-size: 0.95rem;
+  padding: 1rem 2rem;
+}
+
+/* Scroll Indicator */
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero__scroll-indicator span {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gavale-silver);
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--gavale-silver), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* Trust micro-copy */
+.hero__trust {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+}
+
+.hero__trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--gavale-silver);
+  text-transform: uppercase;
+}
+
+.hero__trust-item svg {
+  color: var(--cta);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .hero__content {
+    margin-top: 5rem;
+    padding: 0 var(--space-md);
+  }
+  .hero__sub {
+    font-size: 0.95rem;
+  }
+  .hero__cta-group {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  .hero__trust {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}
+
+/* Optional desktop video pan (Travel from bottom to top) */
+@media (min-width: 769px) {
+  .hero__bg video {
+    /* Focuses on the bottom first to show the clothing, then pans up over 20s */
+    animation: panVideoY 25s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes panVideoY {
+  0% {
+    object-position: 50% 100%;
+  }
+  100% {
+    object-position: 50% 0%;
+  }
+}
