@@ -20,9 +20,9 @@ export default function FeaturedProducts() {
       <div className="container">
         <ScrollReveal variant="slideUp">
           <div className="products__header">
-            <span className="products__label">COLLECTIONS</span>
-            <h2>Featured <span className="text-gold">Best Sellers</span></h2>
-            <p>Pieces our community can't stop wearing.</p>
+            <span className="products__label">COLECCIONES</span>
+            <h2><span className="text-gold">Más Vendidos</span> Destacados</h2>
+            <p>Piezas que nuestra comunidad no puede dejar de usar.</p>
 
             {/* Rating summary */}
             <div className="products__rating-summary flex items-center gap-2">
@@ -31,7 +31,7 @@ export default function FeaturedProducts() {
                   <Star key={i} className="w-4 h-4 fill-gold text-gold" />
                 ))}
               </span>
-              <span>4.9/5 based on <strong>847 reviews</strong></span>
+              <span>4.9/5 basado en <strong>847 reseñas</strong></span>
             </div>
           </div>
         </ScrollReveal>
@@ -124,7 +124,7 @@ function ProductCard({ product }: { product: ShopifyProduct }) {
           transition={{ duration: 0.2 }}
         >
           <span className="product-card__quick-add-btn flex items-center justify-center gap-2">
-            Add to Bag <ArrowRight className="w-4 h-4" />
+            Agregar a la Bolsa <ArrowRight className="w-4 h-4" />
           </span>
         </motion.div>
       </div>

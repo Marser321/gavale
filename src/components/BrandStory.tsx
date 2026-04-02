@@ -44,15 +44,13 @@ export default function BrandStory() {
       <div className="brand-story__content container">
         <div className="brand-story__grid">
           <ScrollReveal variant="slideRight" className="brand-story__text">
-            <span className="brand-story__label">OUR STORY</span>
-            <h2>Miami-Born.<br /><span className="text-accent">Globally Driven.</span></h2>
+            <span className="brand-story__label">NUESTRA HISTORIA</span>
+            <h2>Nacida en Miami.<br /><span className="text-accent">Impulso Global.</span></h2>
             <p>
-              Gavale Sportswear was born from a simple belief: every woman deserves athletic
-              wear that performs as hard as she does — without sacrificing an ounce of style.
+              Gavale Sportswear nació de una simple creencia: toda mujer merece ropa deportiva que rinda tanto como ella, sin sacrificar ni un ápice de estilo.
             </p>
             <p>
-              From our flagship stores in Miami's Dolphin Mall and Sawgrass Mills to wardrobes
-              across the Americas, we're redefining what it means to feel powerful in what you wear.
+              Desde nuestras tiendas principales en Dolphin Mall y Sawgrass Mills de Miami hasta guardarropas en toda América, estamos redefiniendo lo que significa sentirse poderosa con lo que usas.
             </p>
 
             <div className="brand-story__locations">

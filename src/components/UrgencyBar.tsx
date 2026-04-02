@@ -41,14 +41,14 @@ export default function UrgencyBar() {
             <div className="urgency-bar__marquee">
               <span className="urgency-bar__icon flex items-center justify-center h-full"><Truck className="w-4 h-4" /></span>
               <span className="urgency-bar__text">
-                <strong>FREE SHIPPING</strong> on orders $100+ — Ends in{' '}
+                <strong>ENVÍO GRATIS</strong> en pedidos sobre $100 — Termina en{' '}
                 <span className="urgency-bar__timer">
                   {pad(time.h)}:{pad(time.m)}:{pad(time.s)}
                 </span>
               </span>
               <span className="urgency-bar__divider inline-flex items-center"><Sparkle className="w-3 h-3" /></span>
               <span className="urgency-bar__text">
-                <strong>New Drop:</strong> Cross Mini Jumpsuit is here →
+                <strong>Nuevo Lanzamiento:</strong> El Cross Mini Jumpsuit ya está aquí →
               </span>
             </div>
             <button

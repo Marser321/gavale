@@ -17,66 +17,66 @@ export default function BentoGrid() {
       id: 'fabric',
       size: 'large',
       video: '/videos/maryan_fit.mp4',
-      label: 'TECHNOLOGY',
-      title: '4-Layer Compression',
-      description: 'You know that moment when you bend down and suddenly feel exposed? Never again. Our proprietary 4-layer weave eliminates transparency while delivering sculpting compression that moves with your body.',
+      label: 'TECNOLOGÍA',
+      title: 'Compresión de 4 Capas',
+      description: '¿Conoces ese momento en que te agachas y de repente te sientes expuesta? Nunca más. Nuestro tejido patentado de 4 capas elimina la transparencia mientras brinda una compresión moldeadora que se mueve con tu cuerpo.',
       icon: <Dna className="w-6 h-6" />,
     },
     {
       id: 'support',
       size: 'medium',
       image: '/images/product_aura_set_1.webp',
-      label: 'INNOVATION',
-      title: 'Strapless Support',
-      description: 'We spent 14 months engineering a strapless bra that actually stays put — yes, even during burpees. The Aura Bandeau defies physics so you don\'t have to.',
+      label: 'INNOVACIÓN',
+      title: 'Soporte Sin Tirantes',
+      description: 'Pasamos 14 meses diseñando un sostén sin tirantes que realmente se mantiene en su lugar, sí, incluso durante los burpees. El Bandeau Aura desafía la física para que no tengas que hacerlo.',
       icon: <Sparkles className="w-6 h-6" />,
     },
     {
       id: 'style',
       size: 'medium',
       image: '/images/lifestyle_escalator_lilac.webp',
-      label: 'VERSATILITY',
-      title: 'Gym to Street',
-      description: 'Your leggings should look as good at Whole Foods as they do at CrossFit. Minimal, elevated, powerful — pieces designed for women who refuse to compromise.',
+      label: 'VERSATILIDAD',
+      title: 'Del Gimnasio a la Calle',
+      description: 'Tus leggings deberían verse tan bien en el supermercado como en el CrossFit. Minimalistas, elegantes, poderosas: piezas diseñadas para mujeres que no se conforman.',
       icon: <Shirt className="w-6 h-6" />,
     },
     {
       id: 'shipping',
       size: 'small',
       icon: <Truck className="w-6 h-6" />,
-      title: 'Free Shipping',
-      description: 'On orders over $100',
+      title: 'Envío Gratis',
+      description: 'En pedidos sobre $100',
     },
     {
       id: 'secure',
       size: 'small',
       icon: <Lock className="w-6 h-6" />,
-      title: 'Secure Payment',
-      description: '256-bit SSL encrypted',
+      title: 'Pago Seguro',
+      description: 'Encriptación SSL de 256 bits',
     },
     {
       id: 'returns',
       size: 'small',
       icon: <RotateCcw className="w-6 h-6" />,
-      title: 'Easy Returns',
-      description: '30-day hassle-free',
+      title: 'Devoluciones Fáciles',
+      description: '30 días sin complicaciones',
     },
     {
       id: 'rompers',
       size: 'medium',
       video: '/videos/new_arrivals.mp4',
-      label: 'MUST-HAVE',
-      title: 'Seamless Rompers',
-      description: 'One piece, zero distractions. Built for high-intensity movement with butter-soft fabric.',
+      label: 'IMPRESCINDIBLE',
+      title: 'Enterizos Sin Costuras',
+      description: 'Una pieza, cero distracciones. Diseñado para movimientos de alta intensidad con tela suave como la mantequilla.',
       icon: <Activity className="w-6 h-6" />,
     },
     {
       id: 'zips',
       size: 'medium',
       image: '/images/top_black_zip.jpg',
-      label: 'NEW DROPS',
-      title: 'Define Jackets',
-      description: 'The perfect layering piece that snatches your waist and elevates your gym aesthetic instantly.',
+      label: 'NUEVOS LANZAMIENTOS',
+      title: 'Chaquetas Define',
+      description: 'La capa perfecta que moldea tu cintura y eleva la estética de tu gimnasio al instante.',
       icon: <Heart className="w-6 h-6" />,
     },
   ];
@@ -86,9 +86,9 @@ export default function BentoGrid() {
       <div className="container">
         <ScrollReveal variant="slideUp">
           <div className="bento__header">
-            <span className="bento__label">THE EXPERIENCE</span>
-            <h2>Crafted for <span className="text-accent">Confidence</span></h2>
-            <p>Every stitch, every fiber, every detail — engineered for women who demand more.</p>
+            <span className="bento__label">LA EXPERIENCIA</span>
+            <h2>Diseñado para la <span className="text-accent">Confianza</span></h2>
+            <p>Cada puntada, cada fibra, cada detalle: diseñado para mujeres que exigen más.</p>
           </div>
         </ScrollReveal>
 
@@ -131,7 +131,7 @@ export default function BentoGrid() {
             transition={{ delay: 0.5 }}
           >
             <Flame className="w-4 h-4 text-orange-500" />
-            <span>{stockAlert.title}: Only {stockAlert.count} left</span>
+            <span>{stockAlert.title}: Solo quedan {stockAlert.count}</span>
           </motion.div>
         )}
       </div>

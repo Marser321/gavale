@@ -29,7 +29,7 @@ const testimonials = [
   {
     image: '/images/real_review_2.jpg',
     name: 'Agueda B.',
-    text: 'Love the color and fit!',
+    text: '¡Me encanta el color y el ajuste!',
     stars: 5,
     product: 'Oversized Jacket',
     variant: 'S / Mint',
@@ -126,8 +126,8 @@ export default function UGCWall() {
       <div className="container">
         <ScrollReveal variant="slideUp">
           <div className="ugc__header">
-            <span className="ugc__label">COMMUNITY</span>
-            <h2>Real Women, Real <span className="text-accent">Confidence</span></h2>
+            <span className="ugc__label">COMUNIDAD</span>
+            <h2>Mujeres Reales, <span className="text-accent">Confianza</span> Real</h2>
 
             {/* Rating summary */}
             <div className="ugc__rating-bar flex items-center gap-2">
@@ -140,11 +140,11 @@ export default function UGCWall() {
                   <Star key={i} className="w-4 h-4 fill-gold text-gold" />
                 ))}
               </div>
-              <span className="ugc__rating-count text-sm text-gray-500">Based on 847 verified reviews</span>
+              <span className="ugc__rating-count text-sm text-gray-500">Basado en 847 reseñas verificadas</span>
             </div>
 
             <p className="ugc__counter-text">
-              Join <strong className="text-gold"><Counter target={10000} /></strong> women training with Gavale
+              Únete a <strong className="text-gold"><Counter target={10000} /></strong> mujeres que entrenan con Gavale
             </p>
           </div>
         </ScrollReveal>
@@ -165,7 +165,7 @@ export default function UGCWall() {
                     {t.verified && (
                       <span className="ugc__card-verified">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
-                        VERIFIED
+                        VERIFICADA
                       </span>
                     )}
                   </div>

@@ -13,10 +13,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: 'Shop', href: '#collections' },
-    { label: 'About', href: '#brand-story' },
-    { label: 'Reviews', href: '#reviews' },
-    { label: 'Contact', href: '#footer' },
+    { label: 'Tienda', href: '#collections' },
+    { label: 'Nosotros', href: '#brand-story' },
+    { label: 'Reseñas', href: '#reviews' },
+    { label: 'Contacto', href: '#footer' },
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function Navbar() {
         </ul>
 
         <a href="https://gavalesportswear.com" target="_blank" rel="noopener noreferrer" className="navbar__cta btn-primary">
-          Shop Now
+          Comprar Ahora
         </a>
 
         <button
@@ -67,7 +67,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="https://gavalesportswear.com" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ marginTop: '1rem', textAlign: 'center', justifyContent: 'center' }}>
-              Shop Now
+              Comprar Ahora
             </a>
           </motion.div>
         )}

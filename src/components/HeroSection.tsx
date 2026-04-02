@@ -68,7 +68,7 @@ export default function HeroSection() {
     return () => ctx.revert();
   }, []);
 
-  const headline = 'Style That Moves With You';
+  const headline = 'Estilo Que Se Mueve Contigo';
   const words = headline.split(' ');
 
   return (
@@ -86,7 +86,7 @@ export default function HeroSection() {
       </div>
 
       <div className="hero__content">
-        <div className="hero__badge">PREMIUM ATHLETIC WEAR</div>
+        <div className="hero__badge">ROPA DEPORTIVA PREMIUM</div>
 
         <h1 className="hero__headline" ref={headlineRef} style={{ perspective: '1000px' }}>
           {words.map((word, i) => (
@@ -96,41 +96,41 @@ export default function HeroSection() {
 
         {/* PAS Copy: Problem → Agitation → Solution */}
         <p className="hero__sub" ref={subRef}>
-          Tired of leggings that go see-through mid-squat? We spent 14 months engineering
-          4-layer anti-transparency fabric that sculpts, supports, and moves — from the
-          gym to the street.
+          ¿Cansada de leggings que se transparentan al hacer sentadillas? Pasamos 14 meses diseñando 
+          una tela de 4 capas anti-transparencia que esculpe, da soporte y se mueve, desde el
+          gimnasio hasta la calle.
         </p>
 
         <div className="hero__cta-group" ref={ctaRef}>
           <MagneticButton href="https://gavalesportswear.com" className="btn-primary btn-hero">
-            Shop The Collection
+            Comprar la Colección
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </MagneticButton>
-          <a href="#just-dropped" className="btn-secondary btn-hero-secondary">What's New</a>
+          <a href="#just-dropped" className="btn-secondary btn-hero-secondary">Novedades</a>
         </div>
 
         {/* Trust micro-copy */}
         <div className="hero__trust" ref={trustRef}>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Free returns
+            Devoluciones gratuitas
           </span>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Ships in 2-3 days
+            Envío en 2-3 días
           </span>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            10,000+ 5-star reviews
+            Más de 10,000 reseñas de 5 estrellas
           </span>
         </div>
       </div>
 
       <div className="hero__scroll-indicator">
         <div className="hero__scroll-line" />
-        <span>Scroll</span>
+        <span>Deslizar</span>
       </div>
     </section>
   );

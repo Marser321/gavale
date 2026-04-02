@@ -4,9 +4,9 @@ import './Footer.css';
 export default function Footer() {
 
   const footerLinks = [
-    { title: 'Shop', links: ['New Arrivals', 'Best Sellers', 'Sets', 'Leggings', 'Sports Bras'] },
-    { title: 'Help', links: ['Shipping', 'Returns', 'Size Guide', 'FAQ', 'Contact'] },
-    { title: 'Company', links: ['About Us', 'Careers', 'Press', 'Stores', 'Wholesale'] },
+    { title: 'Tienda', links: ['Novedades', 'Más Vendidos', 'Conjuntos', 'Leggings', 'Sostenes Deportivos'] },
+    { title: 'Ayuda', links: ['Envíos', 'Devoluciones', 'Guía de Tallas', 'Preguntas Frecuentes', 'Contacto'] },
+    { title: 'Compañía', links: ['Sobre Nosotros', 'Empleos', 'Prensa', 'Tiendas', 'Venta al por Mayor'] },
   ];
 
   const socials = [
@@ -29,7 +29,7 @@ export default function Footer() {
               className="footer__logo"
             />
             <p className="footer__tagline">
-              Style that moves with you. Designed for women who don't settle.
+              Estilo que se mueve contigo. Diseñado para mujeres que no se conforman.
             </p>
             <div className="footer__socials">
               {socials.map(s => (
@@ -70,29 +70,29 @@ export default function Footer() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
               </svg>
-              SSL Secure
+              Seguridad SSL
             </span>
             <span className="footer__trust-badge">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>
               </svg>
-              All Cards Accepted
+              Todas las Tarjetas Aceptadas
             </span>
             <span className="footer__trust-badge">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
               </svg>
-              Free Shipping $100+
+              Envío Gratis sobre $100
             </span>
           </div>
 
           <div className="footer__shopify-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Secure checkout powered by Shopify
+            Pago seguro impulsado por Shopify
           </div>
 
           <p className="footer__copyright">
-            © {new Date().getFullYear()} Gavale Sportswear. All rights reserved. | gavalesportswear@gmail.com
+            © {new Date().getFullYear()} Gavale Sportswear. Todos los derechos reservados. | gavalesportswear@gmail.com
           </p>
         </div>
       </div>

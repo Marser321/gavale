@@ -21,11 +21,11 @@ export default function JustDropped() {
       <div className="container">
         <ScrollReveal variant="slideUp">
           <div className="just-dropped__header">
-            <span className="just-dropped__label">JUST IN</span>
+            <span className="just-dropped__label">RECIÉN LLEGADO</span>
             <h2>
-              Fresh <span className="text-gold">Drops</span>
+              Nuevos <span className="text-gold">Lanzamientos</span>
             </h2>
-            <p>New arrivals that won't last long. Get them before they're gone.</p>
+            <p>Nuevos estilos que no durarán mucho. Consíguelos antes de que se agoten.</p>
           </div>
         </ScrollReveal>
 
@@ -64,11 +64,11 @@ function DropCard({ product }: { product: ShopifyProduct }) {
           viewport={{ once: true }}
         >
           <span className="drop-card__badge-shimmer" />
-          NEW
+          NUEVO
         </motion.span>
         {product.isLowStock && product.totalInventory && (
           <span className="drop-card__stock-alert flex items-center justify-center gap-1">
-            <Flame className="w-3 h-3" /> Only {product.totalInventory} left
+            <Flame className="w-3 h-3" /> Solo quedan {product.totalInventory}
           </span>
         )}
       </div>
