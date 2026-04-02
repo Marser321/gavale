@@ -20,10 +20,10 @@ export default function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <ConversionZone />
         <ProductSpotlight />
         <FeatureGrid />
         <GallerySection />
-        <ConversionZone />
         <RealityWall />
         <Footer />
       </main>

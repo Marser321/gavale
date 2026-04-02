@@ -5,11 +5,11 @@ import { testimonials } from '../data/testimonials';
 import './RealityWall.css';
 
 const filters = [
-  { id: 'all', label: 'All Reviews' },
+  { id: 'all', label: 'Todas las Reseñas' },
   { id: 'aura-set', label: 'Aura Set' },
   { id: 'jumpsuits', label: 'Jumpsuits' },
   { id: 'jackets', label: 'Jackets' },
-  { id: 'sets', label: 'Other Sets' }
+  { id: 'sets', label: 'Otros Sets' }
 ];
 
 export default function RealityWall() {

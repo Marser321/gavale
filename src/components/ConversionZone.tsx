@@ -103,7 +103,7 @@ export default function ConversionZone() {
             <div className="checkout__trust">
               <div className="checkout__trust-item">
                 <RotateCcw className="w-5 h-5 text-cta" />
-                <span>14-Day Hassle-Free Exchanges</span>
+                <span>14 Días para Retornos y Cambios</span>
               </div>
               <div className="checkout__trust-item">
                 <Truck className="w-5 h-5 text-cta" />

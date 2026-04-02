@@ -57,8 +57,10 @@
 
 /* Masonry Grid */
 .reality-wall__grid {
-  column-count: 4;
+  column-count: 3;
   column-gap: var(--space-md);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .reality-wall__item {

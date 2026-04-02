@@ -68,7 +68,7 @@ export default function HeroSection() {
     return () => ctx.revert();
   }, []);
 
-  const headline = 'Minimal. Elevated. Effortlessly Powerful.';
+  const headline = 'Minimalista. Elevado. Poderoso Sin Esfuerzo.';
   const words = headline.split(' ');
 
   return (
@@ -112,15 +112,15 @@ export default function HeroSection() {
         <div className="hero__trust" ref={trustRef}>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            14-Day Hassle-Free Exchanges
+            14 Días para Retornos y Cambios
           </span>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Squat-Proof
+            A Prueba de Sentadillas
           </span>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Premium Second Skin Fabric
+            Tela Premium Segunda Piel
           </span>
         </div>
       </div>
