@@ -10,7 +10,7 @@ const colors = [
   { id: 'black', name: 'Onyx Black', hex: '#1a1a1a', img: '/images/aura/aura_product_8.jpg' },
 ];
 
-const sizes = ['XS', 'S', 'M', 'L', 'XL'];
+const sizes = ['S', 'M', 'L'];
 
 export default function ConversionZone() {
   const [selectedColor, setSelectedColor] = useState(colors[0]);

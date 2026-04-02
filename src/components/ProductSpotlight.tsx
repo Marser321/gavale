@@ -76,7 +76,7 @@ export default function ProductSpotlight() {
             <ul className="spotlight__features">
               <li>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cta)" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Sensación "Second Skin"
+                Sensación Segunda Piel
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cta)" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -98,12 +98,12 @@ export default function ProductSpotlight() {
           <div className="spotlight__content">
             <h3 className="spotlight__item-title">Los Leggings</h3>
             <p className="spotlight__item-desc">
-              Cintura alta con una <strong>pretina que esculpe</strong> (sculpting waistband) para dar soporte al core y resaltar tus curvas. El frente <strong>sin costuras</strong> evita fricción creando un ajuste limpio.
+              Cintura alta con una <strong>pretina moldeadora</strong> para dar soporte al core y resaltar tus curvas. El frente <strong>sin costuras</strong> evita fricción creando un ajuste limpio.
             </p>
             <ul className="spotlight__features">
               <li>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cta)" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Totalmente Squat-Proof
+                Totalmente a Prueba de Sentadillas
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cta)" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>

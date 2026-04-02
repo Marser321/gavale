@@ -68,7 +68,7 @@ export default function HeroSection() {
     return () => ctx.revert();
   }, []);
 
-  const headline = 'Minimalista. Elevado. Poderoso Sin Esfuerzo.';
+  const headline = 'Estilo Sofisticado y Cómodo.';
   const words = headline.split(' ');
 
   return (
