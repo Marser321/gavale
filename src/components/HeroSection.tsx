@@ -68,25 +68,25 @@ export default function HeroSection() {
     return () => ctx.revert();
   }, []);
 
-  const headline = 'Estilo Que Se Mueve Contigo';
+  const headline = 'Minimal. Elevated. Effortlessly Powerful.';
   const words = headline.split(' ');
 
   return (
     <section id="hero" className="hero-section" ref={sectionRef}>
       <div className="hero__bg" ref={imgRef}>
         <video
-          src="/videos/hero_video.mp4"
-          className="hero__video"
+          src="/videos/gavale_web.mp4"
           autoPlay
           loop
           muted
           playsInline
+          className="hero__video"
         />
         <div className="hero__overlay" />
       </div>
 
       <div className="hero__content">
-        <div className="hero__badge">ROPA DEPORTIVA PREMIUM</div>
+        <div className="hero__badge">NUESTRO PRODUCTO ESTRELLA</div>
 
         <h1 className="hero__headline" ref={headlineRef} style={{ perspective: '1000px' }}>
           {words.map((word, i) => (
@@ -96,34 +96,31 @@ export default function HeroSection() {
 
         {/* PAS Copy: Problem → Agitation → Solution */}
         <p className="hero__sub" ref={subRef}>
-          ¿Cansada de leggings que se transparentan al hacer sentadillas? Pasamos 14 meses diseñando 
-          una tela de 4 capas anti-transparencia que esculpe, da soporte y se mueve, desde el
-          gimnasio hasta la calle.
+          Confianza sin esfuerzo. Líneas limpias, soporte que esculpe tu figura y una sensación de "segunda piel". El <strong>Aura Bandeau Set</strong> es todo lo que necesitas.
         </p>
 
         <div className="hero__cta-group" ref={ctaRef}>
-          <MagneticButton href="https://gavalesportswear.com" className="btn-primary btn-hero">
-            Comprar la Colección
+          <MagneticButton href="#conversion-zone" className="btn-primary btn-hero">
+            Obtén tu Aura Set
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </MagneticButton>
-          <a href="#just-dropped" className="btn-secondary btn-hero-secondary">Novedades</a>
         </div>
 
         {/* Trust micro-copy */}
         <div className="hero__trust" ref={trustRef}>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Devoluciones gratuitas
+            14-Day Hassle-Free Exchanges
           </span>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Envío en 2-3 días
+            Squat-Proof
           </span>
           <span className="hero__trust-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Más de 10,000 reseñas de 5 estrellas
+            Premium Second Skin Fabric
           </span>
         </div>
       </div>

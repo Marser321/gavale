@@ -177,7 +177,8 @@
 
 /* Optional desktop video pan (Travel from bottom to top) */
 @media (min-width: 769px) {
-  .hero__bg video {
+  .hero__bg video,
+  .hero__bg img {
     /* Focuses on the bottom first to show the clothing, then pans up over 20s */
     animation: panVideoY 25s ease-in-out infinite alternate;
   }
@@ -185,9 +186,9 @@
 
 @keyframes panVideoY {
   0% {
-    object-position: 50% 100%;
+    object-position: 50% 0%; /* Top */
   }
   100% {
-    object-position: 50% 35%; /* Caps panning at mid-chest to hide faces on desktop */
+    object-position: 50% 100%; /* Bottom */
   }
 }

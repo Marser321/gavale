@@ -1,11 +1,11 @@
 import UrgencyBar from './components/UrgencyBar';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import JustDropped from './components/JustDropped';
-import BentoGrid from './components/BentoGrid';
-import FeaturedProducts from './components/FeaturedProducts';
-import UGCWall from './components/UGCWall';
-import BrandStory from './components/BrandStory';
+import ProductSpotlight from './components/ProductSpotlight';
+import FeatureGrid from './components/FeatureGrid';
+import GallerySection from './components/GallerySection';
+import ConversionZone from './components/ConversionZone';
+import RealityWall from './components/RealityWall';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -20,11 +20,11 @@ export default function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <JustDropped />
-        <BentoGrid />
-        <FeaturedProducts />
-        <UGCWall />
-        <BrandStory />
+        <ProductSpotlight />
+        <FeatureGrid />
+        <GallerySection />
+        <ConversionZone />
+        <RealityWall />
         <Footer />
       </main>
     </>

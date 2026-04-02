@@ -1,0 +1,219 @@
+.reality-wall {
+  position: relative;
+  background-color: var(--gavale-black);
+}
+
+.reality-wall__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.reality-wall__label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: var(--cta);
+  display: block;
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+}
+
+.reality-wall__header h2 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-xl);
+}
+
+.reality-wall__filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.reality-wall__filter-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  color: var(--gavale-silver);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+
+.reality-wall__filter-btn:hover {
+  border-color: var(--gavale-smoke);
+  color: var(--gavale-white);
+}
+
+.reality-wall__filter-btn.active {
+  background: var(--gavale-white);
+  color: var(--gavale-black);
+  border-color: var(--gavale-white);
+  font-weight: 500;
+}
+
+/* Masonry Grid */
+.reality-wall__grid {
+  column-count: 4;
+  column-gap: var(--space-md);
+}
+
+.reality-wall__item {
+  break-inside: avoid;
+  margin-bottom: var(--space-md); /* Consistent gap between rows */
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.reality-wall__image-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.reality-wall__image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--duration-slow);
+}
+
+/* Hover Overlay */
+.reality-wall__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(10, 10, 10, 0.6) 40%,
+    rgba(10, 10, 10, 0.2) 100%
+  );
+  opacity: 0;
+  transform: translateY(10px);
+  backdrop-filter: blur(4px);
+  transition: all var(--duration-normal);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-md);
+  pointer-events: none;
+}
+
+.reality-wall__image-wrapper:hover .reality-wall__overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reality-wall__image-wrapper:hover img {
+  transform: scale(1.04);
+}
+
+.reality-wall__overlay-content {
+  width: 100%;
+  transform: translateY(10px);
+  transition: transform var(--duration-normal);
+}
+
+.reality-wall__image-wrapper:hover .reality-wall__overlay-content {
+  transform: translateY(0);
+}
+
+.reality-wall__stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: var(--space-xs);
+}
+
+.reality-wall__review-text {
+  color: var(--gavale-white);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: var(--space-md);
+  font-style: italic;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.reality-wall__meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reality-wall__product {
+  color: var(--cta);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.reality-wall__customer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reality-wall__name {
+  color: var(--gavale-smoke);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.reality-wall__verified {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #4ade80; /* Subtle green for verified */
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Responsive Masonry */
+@media (max-width: 1200px) {
+  .reality-wall__grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .reality-wall__grid {
+    column-count: 2;
+  }
+  .reality-wall__overlay {
+    opacity: 1; /* Always show overlay on tablet/mobile */
+    background: linear-gradient(
+      to top,
+      rgba(10, 10, 10, 0.9) 0%,
+      rgba(10, 10, 10, 0.4) 60%,
+      rgba(10, 10, 10, 0) 100%
+    );
+  }
+  .reality-wall__overlay-content {
+    transform: translateY(0);
+  }
+  .reality-wall__review-text {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .reality-wall__grid {
+    column-count: 1;
+  }
+  .reality-wall__header h2 {
+    font-size: 2rem;
+  }
+}
